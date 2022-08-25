@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=DynaPuff:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lobster&display=swap');
+html {
+    font-family: DynaPuff;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: rgb(17, 17, 17);
+}
+.bg-video video {
+    -webkit-filter: blur(10px);
+    filter: blur(10px);
+}
+.bg-video:after {
+    content: "";
+    display: block;
+    width: 100vw;
+    height: 100vh;
+
+    background-color: rgba(0, 0, 0, .8);
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+.links {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.links a {
+    margin-top: 10px;
+    padding-right: 5px;
+    padding-left: 5px;
+    color: #cccccc;
+    display: block;
+}
+.links a img {
+    width: 4rem;
+    height: 3rem;
+    opacity: 0.6;
+    filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(44deg) brightness(102%) contrast(112%) drop-shadow( 0.1em 0.1em 0.12em #ffffff);
+    transition: all 0.2s;
+}
+.links a img:hover {
+    opacity: 1;
+    transform: scale(1.5,1.5);
+}
+.mute-button {
+    z-index: 1;
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    width: 3rem;
+    height: 3rem;
+    opacity: 0.3;
+    filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(44deg) brightness(102%) contrast(112%) drop-shadow( 0.1em 0.1em 0.12em #ffffff);
+    transition: all 0.2s;
+}
+.mute-button:hover {
+    opacity: 1;
+    width: 3.7rem;
+    height: 3.7rem;
+}
+.overlay {
+    z-index: 1;
+    background-color: black;
+}
+.overlay label {
+    display: grid;
+    place-items: center;
+    width: 100vw;
+    height: 100vw;
+    color: rgb(255, 255, 255);
+    font-size: 2rem;
+}
+.fullscreen {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    min-height: 100vh;
+    min-width: 100vw;
+}
+.text {
+    background: rgba(0, 0, 0, 0);
+    display: grid;
+    place-content: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+}
+.text h1 {
+    font-size: 3.5rem;
+    font-weight: 800;
+    font-family: DynaPuff;
+    text-shadow: 0 0 0.40em #ffffff;
+}
+.footer {
+    position: relative
+}
+.footer p {
+    position: fixed;
+    bottom: 10px;
+    width: 100%;
+    font-size: 1.25rem;
+    text-align: center;
+    font-family: Lobster;
+    color: white;
+    text-shadow: 0 0 0.40em #bababa;
+}

@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Wolfy</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Wolfy">
+    <meta property="og:title" content="I'am cringe">
+    <meta property="og:description" content="$$$">
+    <meta name="theme-color" content="#0ced13">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <script src="script.js"></script>
+    <input type="checkbox" autocomplete="off" id="mute" style="opacity: 0;">
+    <div class="mute-button">
+        <label for="mute" onclick="mute()" id="muted">
+            <img src="src/mute.svg" id="mute-icon">
+        </label>
+    </div>
+    <audio autoplay loop preload="auto" id="audio">
+        <source src="src/music.mp3" type="audio/mp3">
+    </audio>
+    <div class="bg-video">
+        <video autoplay muted loop playsinline preload="auto" class="fullscreen" id="video">
+            <source src="src/bg-video.mp4" type="video/mp4">
+        </video>
+    </div>
+    <section class="fullscreen text">
+        <h1>WOLFY</h1>
+        <div class="links">
+            <a href="https://discord.gg/htae9B9b4K"><img src="src/discord.svg"></a>
+            <a href="https://t.me/LinCatUwU"><img src="src/telegram.svg"></a>
+            <a href="https://github.com/WolfySoCute"><img src="src/github.svg"></a>
+        </div>
+    </section>
+    <div class="footer">
+        <p>© Wolfy - 2022</p>
+    </div>
+</body>
+</html>
