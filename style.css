@@ -104,6 +104,12 @@ body {
     font-family: DynaPuff;
     text-shadow: 0 0 0.40em #ffffff;
 }
+.text h1:before {
+    content: "WOLFY";
+}
+.text h1:hover::before {
+    content: "LIN";
+}
 .footer {
     position: relative
 }
