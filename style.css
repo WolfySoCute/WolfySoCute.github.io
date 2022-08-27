@@ -44,14 +44,14 @@ body {
     color: #cccccc;
     display: block;
 }
-.links a img {
+.icon {
     width: 4rem;
     height: 3rem;
     opacity: 0.6;
     filter: invert(100%) sepia(0%) saturate(7470%) hue-rotate(44deg) brightness(102%) contrast(112%) drop-shadow( 0.1em 0.1em 0.12em #ffffff);
     transition: all 0.2s;
 }
-.links a img:hover {
+.icon:hover {
     opacity: 1;
     transform: scale(1.5,1.5);
 }
@@ -103,12 +103,6 @@ body {
     font-weight: 800;
     font-family: DynaPuff;
     text-shadow: 0 0 0.40em #ffffff;
-}
-.text h1:before {
-    content: "WOLFY";
-}
-.text h1:hover::before {
-    content: "LIN";
 }
 .footer {
     position: relative
