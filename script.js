@@ -1,17 +1,17 @@
-function mute() {
-    var audio = document.getElementById("audio");
-    if (audio.paused) {
-        document.getElementById("mute-icon").src="src/unmute.svg";
-        audio.volume = 0.5;
-        audio.currentTime = document.getElementById("video").currentTime;
-        audio.muted = false;
-        audio.play();
-    } else if (audio.muted) {
-        document.getElementById("mute-icon").src="src/unmute.svg";
-        audio.currentTime = document.getElementById("video").currentTime;
-        audio.muted = false;
+function mute(elem) {
+    var muteIcon = document.getElementById("mute-icon")
+    if (elem.paused) {
+        muteIcon.src="src/unmute.svg";
+        elem.volume = 0.5;
+        elem.currentTime = document.getElementById("video").currentTime;
+        elem.muted = false;
+        elem.play();
+    } else if (elem.muted) {
+        muteIcon.src="src/unmute.svg";
+        elem.currentTime = document.getElementById("video").currentTime;
+        elem.muted = false;
     } else {
-        document.getElementById("mute-icon").src="src/mute.svg";
-        audio.muted = true;
+        muteIcon.src="src/mute.svg";
+        elem.muted = true;
     };
 };
